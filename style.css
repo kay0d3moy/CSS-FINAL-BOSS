@@ -20,6 +20,27 @@
   --h2-font-size: 2em;
   --h-font-weight: 700;
 }
+
+.btn {
+   border: none;
+  padding: 10px 20px;
+  border-radius: 40px;
+  color: var(--highlight-color);
+  font-weight: bold;
+  cursor: pointer;
+  background: transparent;
+}
+
+.btn.btn-filled {
+background-color: var(--highlight-color);
+color: var(--secondary-color);
+}
+
+
+.btn.btn-outline {
+  border: 1px solid var(--highlight-color);
+}
+
 body {
   line-height: 1.5;
   -webkit-font-smoothing: antialiased;
@@ -80,16 +101,6 @@ a {
   font-weight: 500;
 }
 
-.blue-button {
-  background-color: #0065fe;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 40px;
-  color: white;
-  font-weight: bold;
-  cursor: pointer;
-}
-
 .hamburger {
   display: none;
   font-size: 24px;
@@ -130,15 +141,7 @@ a {
   justify-content: center;
   gap: 20px;
 }
-.clear-button {
-  background-color: #ffffff;
-  border: solid 1px var(--highlight-color);
-  padding: 10px 20px;
-  border-radius: 40px;
-  color: var(--highlight-color);
-  font-weight: bold;
-  cursor: pointer;
-}
+
 .hero-image-container {
   display: flex;
   justify-content: center;
@@ -153,6 +156,7 @@ a {
   padding-bottom: 30px;
   max-width: 800px;
   height: auto;
+  backdrop-filter: blur(212px)
 }
 .forward-arrow {
   position: relative;
@@ -160,11 +164,10 @@ a {
 }
 
 .hero-image-text {
-  position: relative;
-  left: 120px;
   text-align: center;
   justify-self: center;
   max-width: 380px;
+  margin: auto;
 }
 .ellipse-container {
   max-width: 100%;
